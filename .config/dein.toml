@@ -1,0 +1,107 @@
+# dein.toml
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# Color
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/iceberg.rc.vim
+'''
+
+#[[plugins]]
+#repo = 'Shougo/vimproc.vim'
+#hook_post_update = '''
+#  if dein#util#_is_windows()
+#    let cmd = 'tools\\update-dll-mingw'
+#  elseif dein#util#_is_cygwin()
+#    let cmd = 'make -f make_cygwin.mak'
+#  elseif executable('gmake')
+#    let cmd = 'gmake'
+#  else
+#    let cmd = 'make'
+#  endif
+#  let g:dein#plugin.build = cmd
+#'''
+
+# linter
+# aleを導入予定
+
+# Git
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-fugitive.rc.vim
+'''
+
+# Status line
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-airline.rc.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/denite.rc.vim
+'''
+
+# Denite で使用するmatcher
+[[plugins]]
+repo = 'nixprime/cpsm'
+build = 'env PY3=ON ./install.sh'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-surround.rc.vim
+'''
+
+# terminal
+[[plugins]]
+repo = 'Shougo/deol.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/deol.rc.vim
+'''
+
+#[[plugins]]
+#repo = 'thinca/vim-quickrun'
+
+# Language Server
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-lsp.rc.vim
+'''
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+# Snippets
+[[plugins]]
+repo = 'thomasfaingnaert/vim-lsp-neosnippet'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/neosnippet.rc.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
